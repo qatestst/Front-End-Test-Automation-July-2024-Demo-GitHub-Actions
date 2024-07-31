@@ -37,6 +37,7 @@ public class TC01IfUserIsInvalidTryAgainTest
     protected void TearDown()
     {
         driver.Quit();
+        driver.Dispose();
     }
 
     [Test]
@@ -81,7 +82,6 @@ public class TC01IfUserIsInvalidTryAgainTest
             Console.WriteLine("Successful login ");
             // 18 | end |  | 
         }
-        // 19 | close |  | 
-        driver.Close();
+       
     }
 }
